@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: url("../images/spreadCoffee.jpg");
+    background-size: 100vw auto;
+    color: #ffffff;
+}
+
+a:link, a:visited {
+    color: #ffffff;
+    padding: 10px;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+
