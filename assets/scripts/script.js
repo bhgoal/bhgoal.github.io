@@ -1,9 +1,9 @@
-//$("body").scrollspy({target: "#navbarSupportedContent"})
+$("body").scrollspy({target: "#navbarSupportedContent"})
 
 $(document).ready(function(){
     // Add smooth scrolling to all links
     $("a").on("click", function(event) {
-		//$("body").scrollspy("dispose")
+		$("body").scrollspy("dispose")
 		$("a").removeClass("active");
 		$(this).addClass("active");
 		// Make sure this.hash has a value before overriding default behavior
@@ -21,7 +21,7 @@ $(document).ready(function(){
 			}, 800, function(){
 				// Add hash (#) to URL when done scrolling (default click behavior)
 				window.location.hash = hash;
-				//$("body").scrollspy({target: "#navbarSupportedContent"})
+				$("body").scrollspy({target: "#navbarSupportedContent"})
 			});
 		}
     });

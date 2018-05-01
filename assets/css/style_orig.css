@@ -1,50 +1,154 @@
-* {
-    box-sizing: border-box;
+html {
 }
-
 body {
-    /*background: url("../images/spreadCoffee.jpg");
-    background-size: 100vw auto;*/
-    color: #ffffff;
-    height: 100%;
-    position: absolute;
-}
-
-a:link, a:visited {
-    color: #ffffff;
-    padding: 10px;
-    text-decoration: none;
-}
-
-.projectLinkBox {
-    font-size: 30px;
-    background-color: #444444;
-    border-radius: 5px;
-    margin: 20px;
-    display: block;
     position: relative;
-    top: 40%;
-}
+    /* Margin bottom by footer height */
+    height:auto ;
 
-a:hover {
-    text-decoration: underline;
-}
+    /* background-image: url("../images/waterDrops.jpg"); 
 
-.parallax {
-    /* The image used */
-    background-image: url("../images/waterDrops.jpg");
-    position: relative;
-    display: block;
-    /* Set a specific height */
-    min-height: 500px; 
-
-    /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
+    font-family: 'Helvetica Neue Ultra Light', 'Helvetica', 'Arial', sans-serif;
+    font-weight: normal;
 }
 
-#scrollBox {
-    background-color: transparent;
+
+.navbar {
+    background: rgba(24, 24, 24, 0.98);
+    border-bottom: 1px solid gray;
 }
+
+
+#jumbotronContents {
+    padding-top: 150px;
+}
+
+.wrapper {
+    /* The height needs to be set to a fixed value for the effect to work.
+     * 100vh is the full height of the viewport. */
+    height: 100vh;
+    /* The scaling of the images would add a horizontal scrollbar, so disable x overflow. */
+    overflow-x: hidden;
+    /* Enable scrolling on the page. */
+    overflow-y: auto;
+    /* Set the perspective to 2px. This is essentailly the simulated distance from the viewport to transformed objects.*/
+    perspective: 2px;
+  }
+  
+  .section {
+    /* Needed for children to be absolutely positioned relative to the parent. */
+    position: relative;
+    /* The height of the container. Must be set, but it doesn't really matter what the value is. */
+    height: 100vh;
+  
+    /* For text formatting. */
+   
+
+    color: white;
+    text-shadow: 0 0 5px #000;
+  }
+
+  .section h1 {
+      padding-top: 100px;
+  }
+
+  #sectionPortfolio {
+      background: white;
+      height: auto;
+  }
+
+  #sectionContact {
+    background: white;
+      height: auto;
+  }
+  
+  .parallax::after {
+    /* Display and position the pseudo-element */
+    content: " ";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  
+    /* Move the pseudo-element back away from the camera,
+     * then scale it back up to fill the viewport.
+     * Because the pseudo-element is further away, it appears to move more slowly, like in real life. */
+    transform: translateZ(-1px) scale(1.5);
+    /* Force the background image to fill the whole element. */
+    background-size: 100%;
+    /* Keep the image from overlapping sibling elements. */
+    z-index: -1;
+  }
+  
+  
+  
+  /* Sets the actual background images to adorable kitties. This part is crucial. */
+  .bg1::after {
+    background-image: url('https://placekitten.com/g/900/700');
+  }
+  
+  .bg2::after {
+    background-image: url('https://placekitten.com/g/800/600');
+  }
+
+
+section {
+    padding-top: 120px;
+}
+
+.sectionCol {
+    background: rgba(255, 255, 255, .96);
+}
+
+
+.centerBlock {
+    display: table;
+    margin: auto;
+}
+
+.footer {
+
+    margin-top: 50px;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 60px;
+    line-height: 60px; /* Vertically center the text there */
+    background-color: rgb(39, 41, 44);
+}
+
+.img-thumbnail {
+    position:relative;
+    overflow:hidden;
+}
+
+.imgCaption {
+    position:absolute;
+    bottom:10%;
+    right:0;
+    background:rgba(196, 196, 196, 0.7);
+    width:100%;
+    height:30%;
+    padding:2%;
+    display: initial;
+    color:#fff !important;
+    z-index:2;
+}
+
+.img-thumbnail:hover > .imgCaption {
+    background:rgba(196, 196, 196, 0.85)
+}
+
+.pCenter {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+
+
