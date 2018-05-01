@@ -3,44 +3,66 @@ html {
 body {
     position: relative;
     /* Margin bottom by footer height */
-    height:auto ;
+    height: auto;
 
-    /* background-image: url("../images/waterDrops.jpg"); 
+    font-family: 'Raleway', 'Helvetica', 'Arial', sans-serif;
 
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover; */
-    font-family: 'Helvetica Neue Ultra Light', 'Helvetica', 'Arial', sans-serif;
-    font-weight: normal;
+    /* 
+    Tajawal: maybe
+    Quicksand: yeet
+    Josefin Sans: maybe Nav
+    Raleway: nav
+    Roboto: headers, other large text
+    */
+    font-weight: 400;
 }
 
 
 .navbar {
     background: rgba(24, 24, 24, 0.98);
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid #444444;
+}
+
+.navbar-nav, h2 {
+    font-family: 'Quicksand', 'Helvetica', 'Arial', sans-serif;
+    font-weight: 400;
 }
 
 
 #jumbotronContents {
-    padding-top: 200px;
+    padding-top: 240px;
     color: white;
     text-shadow: 0 0 5px #000;
     height: 100vh;
 }
 
-#sectionPortfolio {
+#sectionWork {
     background: white;
     height: auto;
-    margin: 200px, auto;
 }
 
 #sectionContact {
 background: white;
     height: auto;
 }
-  
 
+#workBox {
+    margin: 100px auto;
+}
+
+#aboutBox {
+    margin-top: 140px;
+    margin-bottom: 180px;
+}
+  
+#contactBox {
+    margin: 100px auto;
+}
+
+#biography {
+    font-family: 'Cormorant Garamond', 'Times New Roman', Times, serif;
+    font-size: 22px;
+}
 
 .sectionCol {
     background: rgba(255, 255, 255, .96);
@@ -54,7 +76,6 @@ background: white;
 
 .footer {
 
-    margin-top: 50px;
     bottom: 0;
     width: 100%;
     /* Set the fixed height of the footer here */
