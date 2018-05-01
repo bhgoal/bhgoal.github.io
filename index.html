@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en-us" >
 <head>
     <!-- Required meta tags -->
     <meta charset="UTF-8">
@@ -12,158 +12,161 @@
     <title>Bootstrap Portfolio</title>
 </head>
 <body>
-    <a id="pageTop"></a>
-    <div class="container">
-        <!-- Static navbar -->
-        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark mb-5">
-            <a class="navbar-brand p-0 ml-5" href="#pageTop"><h1>Bernard Goal</h1></a>
-            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent"             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-        
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <div class="navbar-nav ml-auto mr-2">
-                    <a class="nav-item nav-link active" href="#pageTop">Home</a>
-                    <a class="nav-item nav-link" href="#sectionAbout">About</a>
-                    <a class="nav-item nav-link" href="#sectionPortfolio">Portfolio</a>
-                    <a class="nav-item nav-link" href="#sectionContact">Contact</a>
-                </div>
+    <!-- Static navbar -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark mb-5">
+        <a class="navbar-brand p-0 ml-5" href="#"><h1>Bernard Goal</h1></a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent"             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="navbar-nav ml-auto mr-2">
+                <a class="nav-item nav-link active" href="#pageTop">Home</a>
+                <a class="nav-item nav-link" href="#sectionPortfolio">Portfolio</a>
+                <a class="nav-item nav-link" href="#sectionAbout">About</a>
+                <a class="nav-item nav-link" href="#sectionContact">Contact</a>
             </div>
-        </nav>
+        </div>
+    </nav>
 
-        <!-- Main content section -->
-        <section id="sectionAbout">
-            <div class="row">
-                <div class="col-lg-10 mx-auto py-4 px-5 border rounded sectionCol">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <h2>About Me</h2>
-                            <hr>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-4">
-                            <img class="img-fluid" src="assets/images/profile.jpg" alt="A photo of Bernard" />
-                        </div>
-                        <div class="col-lg-8">
-                            <p>Hello! I am Bernard, and this is the first portfolio site I've created! I am an aspiring web developer hoping to learn how to code and make great websites and apps. For now this site will be simple and reflective of my beginner skill level at the beginning of the bootcamp course but as I progress, I hope to come back and improve on it regularly.</p>
-                            <p>As someone who has used and enjoyed computers and the internet since a young age, I am excited to be able to learn how websites work and to create projects of my own. Creation and tinkering have always been interests in mine, as is apparent in the hobbies I've enjoyed over the years, which include RC cars, building computers, and working on cars. Web development appeals to me in the same sort of way so I cannot wait to create and personalize things on this journey!</p>
-                        </div>
+
+<main class="wrapper">
+    <section class="section parallax bg1" id="pageTop">
+        <div class="container mb-5">
+            <h1 class="display-1">A Portfolio Site</h1>
+            <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+            <hr class="my-4">
+            <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+        </div>
+    </section>
+    <section class="section static" id="sectionPortfolio">
+        <div class="row">
+            <div class="col-lg-10 mx-auto py-4 px-5 border rounded sectionCol">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h2>Portfolio</h2>
+                        <hr>
                     </div>
                 </div>
-            </div>
-        </section>
-
-        <!-- Portfolio section -->
-        <section id="sectionPortfolio">
-            <a name="linkPortfolio"></a>
-            <div class="row">
-                <div class="col-lg-10 mx-auto py-4 px-5 border rounded sectionCol">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <h2>Portfolio</h2>
-                            <hr>
-                        </div>
+                <div class="row">
+                    <div class="col-xs-auto mx-auto">
+                        <a href="https://bhgoal.github.io/Bootstrap-Portfolio">
+                            <div class="img-thumbnail my-2">
+                                <img class="img-fluid" src="assets/images/nightlife.jpeg" alt="A photo of nightlife" />
+                                <div class="imgCaption"><div class="pCenter">Original Bootstrap Portfolio</div></div>
+                            </div>
+                        </a>
                     </div>
-                    <div class="row">
-                        <div class="col-xs-auto mx-auto">
-                            <a href="https://bhgoal.github.io/Bootstrap-Portfolio">
-                                <div class="img-thumbnail my-2">
-                                    <img class="img-fluid" src="assets/images/nightlife.jpeg" alt="A photo of nightlife" />
-                                    <div class="imgCaption"><div class="pCenter">Original Bootstrap Portfolio</div></div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-xs-auto mx-auto">
-                            <a href="https://bhgoal.github.io/Responsive-Portfolio">
-                                <div class="img-thumbnail my-2">
-                                    <img class="img-fluid" src="assets/images/food.jpeg" alt="A photo of food" />
-                                    <div class="imgCaption"><div class="pCenter">Responsive Portfolio</div></div>
-                                </div>
-                            </a>
-                        </div>
+                    <div class="col-xs-auto mx-auto">
+                        <a href="https://bhgoal.github.io/Responsive-Portfolio">
+                            <div class="img-thumbnail my-2">
+                                <img class="img-fluid" src="assets/images/food.jpeg" alt="A photo of food" />
+                                <div class="imgCaption"><div class="pCenter">Responsive Portfolio</div></div>
+                            </div>
+                        </a>
                     </div>
-                    <div class="row">
-                        <div class="col-xs-auto mx-auto">
-                            <a href="https://bhgoal.github.io/Word-Guess-Game">
-                                <div class="img-thumbnail my-2">
-                                    <img class="img-fluid" src="assets/images/city.jpeg" alt="A photo of city" />
-                                    <div class="imgCaption"><div class="pCenter">Word Guess Game</div></div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-xs-auto mx-auto">
-                            <a href="https://bhgoal.github.io/unit-4-game">
-                                <div class="img-thumbnail my-2">
-                                    <img class="img-fluid" src="assets/images/fashion.jpeg" alt="A photo of fashion" />
-                                    <div class="imgCaption"><div class="pCenter">Tarkov RPG</div></div>
-                                </div>
-                            </a>
-                        </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-auto mx-auto">
+                        <a href="https://bhgoal.github.io/Word-Guess-Game">
+                            <div class="img-thumbnail my-2">
+                                <img class="img-fluid" src="assets/images/city.jpeg" alt="A photo of city" />
+                                <div class="imgCaption"><div class="pCenter">Word Guess Game</div></div>
+                            </div>
+                        </a>
                     </div>
-                    <div class="row">
-                        <div class="col-xs-auto mx-auto">
-                            <a href="https://bhgoal.github.io/TriviaGame">
-                                <div class="img-thumbnail my-2">
-                                    <img class="img-fluid" src="assets/images/transport.jpeg" alt="A photo of transport" />
-                                    <div class="imgCaption"><div class="pCenter">Snapchat Trivia</div></div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-xs-auto mx-auto">
-                            <a href="https://bhgoal.github.io/FunWithGifs">
-                                <div class="img-thumbnail my-2">
-                                    <img class="img-fluid" src="assets/images/fashion.jpeg" alt="A photo of fashion" />
-                                    <div class="imgCaption"><div class="pCenter">Fun With GIFs</div></div>
-                                </div>
-                            </a>
-                        </div>
+                    <div class="col-xs-auto mx-auto">
+                        <a href="https://bhgoal.github.io/unit-4-game">
+                            <div class="img-thumbnail my-2">
+                                <img class="img-fluid" src="assets/images/fashion.jpeg" alt="A photo of fashion" />
+                                <div class="imgCaption"><div class="pCenter">Tarkov RPG</div></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-auto mx-auto">
+                        <a href="https://bhgoal.github.io/TriviaGame">
+                            <div class="img-thumbnail my-2">
+                                <img class="img-fluid" src="assets/images/transport.jpeg" alt="A photo of transport" />
+                                <div class="imgCaption"><div class="pCenter">Snapchat Trivia</div></div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-xs-auto mx-auto">
+                        <a href="https://bhgoal.github.io/FunWithGifs">
+                            <div class="img-thumbnail my-2">
+                                <img class="img-fluid" src="assets/images/fashion.jpeg" alt="A photo of fashion" />
+                                <div class="imgCaption"><div class="pCenter">Fun With GIFs</div></div>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
-        </section>
-
-        <!-- Contact form-->
-        <section id="sectionContact">
-            <a name="linkContact"></a>
-            <div class="row">
-                <div class="col-lg-10 mx-auto py-4 px-5 border rounded sectionCol">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <h2>Contact Me</h2>
-                            <hr>
-                        </div>
+        </div>
+    </section>
+    <section class="section parallax bg2" id="sectionAbout">
+        <div class="row">
+            <div class="col-lg-10 mx-auto py-4 px-5 border rounded sectionCol">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h2>About Me</h2>
+                        <hr>
                     </div>
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <form>
-                                <div class="form-group">
-                                    <label for="exampleFormControlTextarea1">Name</label>
-                                    <input type="text" class="form-control" id="exampleMessage" placeholder="John Smith"></input>
-                                </div>
-                                <div class="form-group">
-                                    <label for="exampleFormControlInput1">Email address</label>
-                                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-                                </div>
-                                <div class="form-group">
-                                    <label for="exampleFormControlTextarea1">Message</label>
-                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
-                                </div>
-                            </form>
-                        </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <img class="img-fluid" src="assets/images/profile.jpg" alt="A photo of Bernard" />
                     </div>
-                    <input class="btn btn-primary" type="submit" value="Submit">
+                    <div class="col-lg-8">
+                        <p>Hello! I am Bernard, and this is the first portfolio site I've created! I am an aspiring web developer hoping to learn how to code and make great websites and apps. This site is a work in progress that I plan to continuously tweak as I learn and improve throughout the bootcamp course.</p>
+                        <p>As someone who has used and enjoyed computers and the internet since a young age, I am excited to be able to learn how websites work and to create projects of my own. Creation and tinkering have always been interests in mine, as is apparent in the hobbies I've enjoyed over the years, which include RC cars, building computers, and working on cars. Web development appeals to me in the same sort of way so I cannot wait to create and personalize things on this journey!</p>
+                    </div>
                 </div>
             </div>
-        </section>
-    </div>
-
+        </div>
+    </section>
+    <section class="section static" id="sectionContact">
+        <div class="row">
+            <div class="col-lg-10 mx-auto py-4 px-5 border rounded sectionCol">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h2>Contact Me</h2>
+                        <hr>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <form>
+                            <div class="form-group">
+                                <label for="exampleFormControlTextarea1">Name</label>
+                                <input type="text" class="form-control" id="exampleMessage" placeholder="John Smith"></input>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleFormControlInput1">Email address</label>
+                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleFormControlTextarea1">Message</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <input class="btn btn-primary" type="submit" value="Submit">
+            </div>
+        </div>
+    </section>
+    <!-- <section class="section parallax bg2">
+        <h1>La la la</h1>
+    </section> -->
 
 
     <!-- Footer -->
     <div class="footer text-white text-center">
         Copyright © 2018
     </div>
+</main>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
