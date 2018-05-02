@@ -28,6 +28,13 @@ body {
     font-weight: 400;
 }
 
+#nameHeader {
+    margin-bottom: 0;
+    padding: 3px 0;
+    display: flex;
+    align-items: center;
+}
+
 
 #jumbotronContents {
     padding-top: 240px;
@@ -63,6 +70,8 @@ background: white;
     font-family: 'Cormorant Garamond', 'Times New Roman', Times, serif;
     font-size: 22px;
 }
+
+
 
 .sectionCol {
     background: rgba(255, 255, 255, .96);
@@ -113,5 +122,6 @@ background: white;
     transform: translate(-50%, 0);
 }
 
-
-
+.list-group-item:hover {
+    cursor: pointer;
+}

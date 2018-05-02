@@ -1,8 +1,8 @@
 $("body").scrollspy({target: "#navbarSupportedContent"})
 
-$(document).ready(function(){
+
     // Add smooth scrolling to all links
-    $("a").on("click", function(event) {
+    $(".nav-item").on("click", function(event) {
 		$("body").scrollspy("dispose")
 		$("a").removeClass("active");
 		$(this).addClass("active");
@@ -25,12 +25,16 @@ $(document).ready(function(){
 			});
 		}
     });
-});
+
+
 
 $('#list-tab a').on('click', function (e) {
-	e.preventDefault()
+	e.preventDefault();	
+	e.stopPropagation();
 	$(this).tab('show')
 })
+
+
 
 
 
