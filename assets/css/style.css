@@ -100,20 +100,20 @@ background: white;
 
 .imgCaption {
     position:absolute;
-    bottom:10%;
+    top: 500px;
     right:0;
     background:rgba(196, 196, 196, 0.7);
     width:100%;
     height:30%;
-    padding:2%;
+    padding:0;
     display: initial;
     color:#fff !important;
     z-index:2;
 }
 
-.img-thumbnail:hover > .imgCaption {
+/* .img-thumbnail:hover > .imgCaption {
     background:rgba(196, 196, 196, 0.85)
-}
+} */
 
 .pCenter {
     position: absolute;
