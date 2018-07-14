@@ -27,16 +27,18 @@ $(".nav-item").on("click", function(event) {
 });
 
 
-
+var captionFade;
 $('#list-tab a').on('click', function (e) {
+
+	clearTimeout(captionFade);
 	e.preventDefault();	
 	e.stopPropagation();
 	$(this).tab('show')
 	setTimeout(captionReset, 200);
-	setTimeout(captionFadeIn, 1000);
+	captionFade = setTimeout(captionFadeIn, 220);
 })
 
-setTimeout(captionFadeIn, 1000);
+setTimeout(captionFadeIn, 220);
 
 
 
@@ -49,21 +51,21 @@ function captionReset() {
 
 function captionFadeIn() { 
  //$(".imgCaption").fadeIn(1000); //.fadeIn(250)
- $(".imgCaption").animate({top: "100px"});
+ $(".imgCaption").animate({top: "250px"});
 };
 
 
-
+captionFade();
 // Image caption fade in/out effect
 function captionFade() {
     $("[rel='tooltip']").tooltip();    
  
     $(".img-thumbnail").hover(
         function(){
-            $(this).find(".imgCaption").fadeIn(250); //.fadeIn(250)
+            $(this).find(".imgCaption").fadeTo(250, 0.4); //.fadeIn(250)
         },
         function(){
-            $(this).find(".imgCaption").fadeOut(250); //.fadeOut(205)
+            $(this).find(".imgCaption").fadeTo(250, 0.9); //.fadeOut(205)
         }
     ); 
 };
