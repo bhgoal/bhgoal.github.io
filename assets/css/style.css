@@ -44,12 +44,12 @@ body {
 }
 
 #sectionWork {
-    background: #eeeeee;
+    background: #ffffff;
     height: auto;
 }
 
 #sectionContact {
-background: #eeeeee;
+    background: #ffffff;
     height: auto;
 }
 
@@ -99,6 +99,43 @@ background: #eeeeee;
     overflow:hidden;
 }
 
+.project-col {
+    padding: 0;
+}
+
+
+.project {
+    padding-bottom: 55%;
+
+    background-color: #fff;
+    margin: 0.4vw;
+    max-width: 100%;
+    height: 0;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    display: block;
+    position: relative;
+}
+
+.sq {
+    padding-bottom: 77%;
+}
+
+.panelCaption {
+    position:absolute;
+    top: 0;
+    left:0;
+    background:rgba(196, 196, 196, 0.9);
+    width:100%;
+    height:100%;
+    padding:0;
+    display: none;
+    color:#fff !important;
+    z-index:2;
+}
+
 .imgCaption {
     position:absolute;
     top: 500px;
@@ -125,4 +162,9 @@ background: #eeeeee;
 
 .list-group-item:hover {
     cursor: pointer;
+}
+
+.row {
+    margin-left: 0;
+    margin-right: 0;
 }

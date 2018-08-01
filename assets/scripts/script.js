@@ -79,3 +79,17 @@ function captionHover() {
 		}
 	);
 }
+
+panelCaption();
+function panelCaption() {
+	$("[rel='tooltip']").tooltip();  
+	  
+    $(".project").hover(
+        function(){
+            $(this).find(".panelCaption").fadeIn(250); //.fadeIn(250)
+        },
+        function(){
+            $(this).find(".panelCaption").fadeOut(250); //.fadeOut(205)
+        }
+    ); 
+};
