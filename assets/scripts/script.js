@@ -1,11 +1,19 @@
+$( document ).ready(function() {
+    $("a.nav-link.active").css("color", "rgb(0, 0, 0)");
+	$("a.nav-link").not(".active").css("color", "rgba(0, 0, 0, 0.247");
+});
+
 $("body").scrollspy({target: "#navbarSupportedContent"})
 
 
 // Add smooth scrolling to all links
-$(".nav-item").on("click", function(event) {
+$(".nav-item, .navbar-brand").on("click", function(event) {
 	$("body").scrollspy("dispose")
 	$("a").removeClass("active");
 	$(this).addClass("active");
+	if (this.hash === "#pageTop") {
+		$("#navHome").addClass("active");
+	}
 	// Make sure this.hash has a value before overriding default behavior
 	if (this.hash !== "") {
 		// Prevent default anchor click behavior
@@ -25,6 +33,48 @@ $(".nav-item").on("click", function(event) {
 		});
 	}
 });
+
+
+
+
+var navForced = false;
+$(window).scroll(function() {
+    var height = $(window).scrollTop();
+    getMultiplier(height, 100, 492);
+});
+
+function getMultiplier(height, rangeMin, rangeMax) {
+	var multiplier = (height - rangeMin) / (rangeMax - rangeMin);
+	if (height < rangeMin) {
+		multiplier = 0;
+	}
+	if (height > rangeMax) {
+		multiplier = 1;
+	}
+	changeNav(multiplier);
+	
+}
+
+
+function changeNav(multiplier) {
+	var opacity = multiplier;
+	var color = Math.floor((multiplier) * 255);
+	var textOpacity = (0.2 * multiplier) + 0.3;
+	$("#mainNav").css("background", `rgba(24, 24, 24, ${opacity})`);
+	$("a.nav-link.active").css("color", `rgb(${color}, ${color}, ${color})`);
+	$("a.nav-link").not(".active").css("color", `rgba(${color}, ${color}, ${color}, ${textOpacity})`);
+	$("#homeArrow").css("opacity", `${opacity}`);
+	if (opacity < 0.1) {
+		$("a.navbar-brand").css("visibility", "hidden");
+	} else {
+		$("a.navbar-brand").css("visibility", "visible");
+	}
+}
+
+function forceNav(opacity) {
+	$("#mainNav").css("background", `rgba(24, 24, 24, ${opacity})`);
+	// navForced = true;
+}
 
 
 var captionFade;

@@ -15,15 +15,15 @@
 </head>
 <body>
     <!-- Static navbar -->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark mb-5">
-        <a class="navbar-brand p-0 ml-5" href="#"><h1 id="nameHeader" style="font-weight: 400">Bernard Goal</h1></a>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark mb-5" id="mainNav">
+        <a class="navbar-brand p-0 ml-5" href="#pageTop" id="navbarBrand"><h1 id="nameHeader" style="font-weight: 400"><i class="fas fa-angle-double-up" id="homeArrow"></i></h1></a>
         <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent"             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
     
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <div class="navbar-nav ml-auto mr-2">
-                <a class="nav-item nav-link active" href="#pageTop">Home</a>
+                <a id="navHome" class="nav-item nav-link active" href="#pageTop">Home</a>
                 <a class="nav-item nav-link" href="#sectionWork">Projects</a>
                 <a class="nav-item nav-link" href="#sectionAbout">About</a>
                 <a class="nav-item nav-link" href="#sectionContact">Contact</a>
@@ -44,170 +44,93 @@
     <!-- Portfolio section -->
     <section class="section static" id="sectionWork">
         <div class="row">
-            <div class="col-lg-10 mx-auto sectionCol" id="workBox">
-
-
+            <div class="col-lg-10 project-col mx-auto sectionCol" id="workBox">
                 <div class="row">
-                        <h1 class="mb-3" style="margin: 0.4vw">Recent Projects</h1>
+                        <h1 class="display-4 mb-5 mx-auto" style="margin: 0.4vw">Recent Projects</h1>
                 </div>
-
                 <div class="row">
                     <div class="col-lg-7 project-col">
-                        <a href="coffee-shop-sim.herokuapp.com">
-                            <div class="img-panel project" style="background-image: url(assets/images/coffeeShopSim.png);">
-                                <div class="panelCaption"><div class="pCenter">Original Bootstrap Portfolio</div></div>
+                        <div class="img-panel project" style="background-image: url(assets/images/coffeeShopSim.png);">
+                            <div class="panelCaption">
+                                <div class="pCenter">
+                                    <p style="font-size: 1.25em">Coffee Shop Simulator</p>
+                                    <p class="projectDesc">An interactive game of coffee drink building, utilizing the MERN stack.</p>
+                                    <nav class="cl-effect-4 mt-4"><a href="https://coffee-shop-sim.herokuapp.com">View Project</a><a href="https://github.com/bhgoal/coffee-shop-sim">View GitHub</a></nav>
+                                </div>
                             </div>
-                        </a>
+                        </div>
                     </div>
                     <div class="col-lg-5 project-col">
                         <div class="img-panel project sq" style="background-image: url(assets/images/hangman.png);">
-                                <div class="panelCaption">
-                                    <a href="https://bhgoal.github.io/Word-Guess-Game">
-                                <div class="pCenter">Word Guess Game</div></div>
+                            <div class="panelCaption">
+                                <div class="pCenter">
+                                    <p style="font-size: 1.25em">Ice Cream Hangman</p>
+                                    <p class="projectDesc">A vanilla Javascript take on a classic.</p>
+                                    <nav class="cl-effect-4 mt-4"><a href="https://bhgoal.github.io/Word-Guess-Game">View Project</a><a href="https://github.com/bhgoal/Word-Guess-Game">View GitHub</a></nav>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-lg-4 project-col">
-                        <a href="https://bhgoal.github.io/Word-Guess-Game">
-                            <div class="img-panel project sq" style="background-image: url(assets/images/burger.png);">
-                                <div class="panelCaption"><div class="pCenter">Word Guess Game</div></div>
+                        <div class="img-panel project sq" style="background-image: url(assets/images/burger.png);">
+                            <div class="panelCaption">
+                                <div class="pCenter">
+                                    <p style="font-size: 1.25em">Eat Da Burger</p>
+                                    <p class="projectDesc">Track your burger desires with a full-stack app utilizing Handlebars, Express, Node, and MySQL.</p>
+                                    <nav class="cl-effect-4 mt-4"><a href="https://warm-headland-31883.herokuapp.com/">View Project</a><a href="https://github.com/bhgoal/sequelized-burger">View GitHub</a></nav>
+                                </div>
                             </div>
-                        </a>
+                        </div>
                     </div>
                     <div class="col-lg-4 project-col">
-                        <a href="https://bhgoal.github.io/Word-Guess-Game">
-                            <div class="img-panel project sq" style="background-image: url(assets/images/giphy.png);">
-                                <div class="panelCaption"><div class="pCenter">Word Guess Game</div></div>
+                        <div class="img-panel project sq" style="background-image: url(assets/images/giphy.png);">
+                            <div class="panelCaption">
+                                <div class="pCenter">
+                                    <p style="font-size: 1.25em">Fun with GIFs</p>
+                                    <p class="projectDesc">Search for GIFs using the Giphy API. Uses Bootstrap, AJAX, and jQuery.</p>
+                                    <nav class="cl-effect-4 mt-4"><a href="https://bhgoal.github.io/FunWithGifs/">View Project</a><a href="https://github.com/bhgoal/FunWithGifs">View GitHub</a></nav>
+                                </div>
                             </div>
-                        </a>
+                        </div>
                     </div>
                     <div class="col-lg-4 project-col">
-                        <a href="https://bhgoal.github.io/Word-Guess-Game">
-                            <div class="img-panel project sq" style="background-image: url(assets/images/tarkov.png);">
-                                <div class="panelCaption"><div class="pCenter">Word Guess Game</div></div>
+                        <div class="img-panel project sq" style="background-image: url(assets/images/tarkov.png);">
+                            <div class="panelCaption">
+                                <div class="pCenter">
+                                    <p style="font-size: 1.25em">Escape From Tarkov RPG</p>
+                                    <p class="projectDesc">Inspired by the Escape From Tarkov first-person shooter and built with jQuery and Bootstrap.</p>
+                                    <nav class="cl-effect-4 mt-4"><a href="https://bhgoal.github.io/unit-4-game/">View Project</a><a href="https://github.com/bhgoal/unit-4-game">View GitHub</a></nav>
+                                </div>
                             </div>
-                        </a>
+                        </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-lg-5 project-col">
-                        <a href="https://bhgoal.github.io/Word-Guess-Game">
-                            <div class="img-panel project sq" style="background-image: url(assets/images/trivia.png);">
-                                <div class="panelCaption"><div class="pCenter">Word Guess Game</div></div>
+                        <div class="img-panel project sq" style="background-image: url(assets/images/trivia.png);">
+                            <div class="panelCaption">
+                                <div class="pCenter">
+                                    <p style="font-size: 1.25em">Snapchat Trivia</p>
+                                    <p class="projectDesc">Test your knowledge of Snapchat with a game in the style of the app's own quizzes. Uses jQuery and Bootstrap.</p>
+                                    <nav class="cl-effect-4 mt-4"><a href="https://bhgoal.github.io/TriviaGame/">View Project</a><a href="https://github.com/bhgoal/TriviaGame">View GitHub</a></nav>
+                                </div>
                             </div>
-                        </a>
+                        </div>
                     </div>
                     <div class="col-lg-7 project-col">
-                        <a href="https://bhgoal.github.io/Word-Guess-Game">
-                            <div class="img-panel project" style="background-image: url(assets/images/potbuddy.png);">
-                                <div class="panelCaption"><div class="pCenter">Word Guess Game</div></div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-
-
-                <div class="row">
-                    <div class="col-4">
-                        <div class="list-group" id="list-tab" role="tablist">
-                            <a class="list-group-item list-group-item-action active" id="list-bootstrap-list" data-target="#list-bootstrap" role="tab">Original Bootstrap Portfolio</a>
-                            <a class="list-group-item list-group-item-action" id="list-responsive-list" data-target="#list-responsive" role="tab">Responsive Portfolio</a>
-                            <a class="list-group-item list-group-item-action" id="list-hangman-list" data-target="#list-hangman" role="tab">Word Guess Game</a>
-                            <a class="list-group-item list-group-item-action" id="list-rpg-list" data-target="#list-rpg" role="tab">Tarkov RPG</a>
-                            <a class="list-group-item list-group-item-action" id="list-trivia-list" data-target="#list-trivia" role="tab">Snapchat Trivia</a>
-                            <a class="list-group-item list-group-item-action" id="list-giphy-list" data-target="#list-giphy" role="tab">Fun with GIFs</a>
-                            <a class="list-group-item list-group-item-action" id="list-rps-list" data-target="#list-rps" role="tab">Online Rock Paper Scissors</a>
-                            <a class="list-group-item list-group-item-action" id="list-liri-list" data-target="#list-liri" role="tab">LIRI- Node API Search</a>
-                        </div>
-                    </div>
-                    <div class="col-8">
-                        <div class="tab-content" id="nav-tabContent">
-                            <div class="tab-pane fade active show" id="list-bootstrap" role="tabpanel">
-                                <div class="col-xs-auto mx-auto">
-                                    <a href="https://bhgoal.github.io/Bootstrap-Portfolio">
-                                        <div class="img-thumbnail">
-                                            <img class="img-fluid" src="assets/images/bootstrapPort.png" alt="Image of bootstrap portfolio site" />
-                                            <div class="imgCaption"><div class="pCenter">Original Bootstrap Portfolio</div></div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="tab-pane fade" id="list-responsive" role="tabpanel">
-                                <div class="col-xs-auto mx-auto">
-                                    <a href="https://bhgoal.github.io/Responsive-Portfolio">
-                                        <div class="img-thumbnail">
-                                            <img class="img-fluid" src="assets/images/responsivePort.png" alt="Image of responsive portfolio site" />
-                                            <div class="imgCaption"><div class="pCenter">Responsive Portfolio</div></div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="tab-pane fade" id="list-hangman" role="tabpanel">
-                                <div class="col-xs-auto mx-auto">
-                                    <a href="https://bhgoal.github.io/Word-Guess-Game">
-                                        <div class="img-thumbnail">
-                                            <img class="img-fluid" src="assets/images/hangman.png" alt="Image of hangman site" />
-                                            <div class="imgCaption"><div class="pCenter">Word Guess Game</div></div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="tab-pane fade" id="list-rpg" role="tabpanel">
-                                <div class="col-xs-auto mx-auto">
-                                    <a href="https://bhgoal.github.io/unit-4-game">
-                                        <div class="img-thumbnail">
-                                            <img class="img-fluid" src="assets/images/tarkov.png" alt="Image of Tarkov RPG" />
-                                            <div class="imgCaption"><div class="pCenter">Tarkov RPG</div></div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="tab-pane fade" id="list-trivia" role="tabpanel">
-                                <div class="col-xs-auto mx-auto">
-                                    <a href="https://bhgoal.github.io/TriviaGame">
-                                        <div class="img-thumbnail">
-                                            <img class="img-fluid" src="assets/images/trivia.png" alt="Image of trivia game" />
-                                            <div class="imgCaption"><div class="pCenter">Snapchat Trivia</div></div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="tab-pane fade" id="list-giphy" role="tabpanel">
-                                <div class="col-xs-auto mx-auto">
-                                    <a href="https://bhgoal.github.io/FunWithGifs">
-                                        <div class="img-thumbnail">
-                                            <img class="img-fluid" src="assets/images/giphy.png" alt="Image of Giphy search site" />
-                                            <div class="imgCaption"><div class="pCenter">Fun With GIFs</div></div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="tab-pane fade" id="list-rps" role="tabpanel">
-                                <div class="col-xs-auto mx-auto">
-                                    <a href="https://bhgoal.github.io/RPS-Multiplayer">
-                                        <div class="img-thumbnail">
-                                            <img class="img-fluid" src="https://placekitten.com/g/800/400" alt="Image of multiplayer RPS game" />
-                                            <div class="imgCaption"><div class="pCenter">Multiplayer Rock Paper Scissors</div></div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="tab-pane fade" id="list-liri" role="tabpanel">
-                                <div class="col-xs-auto mx-auto">
-                                    <a href="https://github.com/bhgoal/liri-node-app">
-                                        <div class="img-thumbnail">
-                                            <img class="img-fluid" src="https://placekitten.com/g/800/400" alt="Image of LIRI" />
-                                            <div class="imgCaption"><div class="pCenter">LIRI- Node API Search</div></div>
-                                        </div>
-                                    </a>
+                        <div class="img-panel project" style="background-image: url(assets/images/potbuddy.png);">
+                            <div class="panelCaption">
+                                <div class="pCenter">
+                                    <p style="font-size: 1.25em">Potbuddy</p>
+                                    <p class="projectDesc">A resource for plant owners, including care instructions, real-time chatbox, and plant selection survey. Created with MySQL, Express, Node, and jQuery.</p>
+                                    <nav class="cl-effect-4 mt-4"><a href="https://still-island-40516.herokuapp.com/">View Project</a><a href="https://github.com/bhgoal/DreamTeamProject2">View GitHub</a></nav>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                     
+                </div>    
             </div>
         </div>
     </section>
@@ -215,11 +138,11 @@
     <!-- About section -->
     <section class="parallax-window" data-parallax="scroll" data-image-src="assets/images/architecture_bg.jpg" data-speed="0.4" id="sectionAbout">
         <div class="row">
-            <div class="col-lg-10 mx-auto py-4 px-5 border rounded sectionCol" id="aboutBox">
+            <div class="col-lg-10 mx-auto pb-5 px-5 sectionCol" id="aboutBox">
                 <div class="row">
                     <div class="col-lg-12">
-                        <h2>About Me</h2>
-                        <hr>
+                        <h1 class="display-4 my-4 text-center">About Me</h1>
+                        <hr class="mb-5">
                     </div>
                 </div>
                 <div class="row">
@@ -239,15 +162,15 @@
     <!-- Contact section -->
     <section class="section static" id="sectionContact">
         <div class="row">
-            <div class="col-lg-10 mx-auto py-4 px-5 border rounded sectionCol" id="contactBox">
+            <div class="col-lg-10 mx-auto pb-5 px-5 border sectionCol" id="contactBox">
                 <div class="row">
                     <div class="col-lg-12">
-                        <h2>Contact Me</h2>
-                        <hr>
+                        <h1 class="display-4 my-4 text-center">Contact Me</h1>
+                        <hr class="mb-5">
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-12">
+                    <div class="col-lg-12 contactRow">
                         I would love to get in contact with you! Feel free to reach me through LinkedIn or email, or check out my GitHub!<br><br>
                         <a href="https://www.linkedin.com/in/bernard-goal-34018068/" class="btn btn-primary"><i class="fab fa-linkedin"></i>
                             LinkedIn</a>
