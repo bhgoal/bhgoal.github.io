@@ -233,3 +233,6 @@ nav a:focus {
 	background: black;
 }
 
+li, p {
+    text-indent: 0;
+}
